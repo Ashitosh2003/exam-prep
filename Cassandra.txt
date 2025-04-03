@@ -1,0 +1,11 @@
+Cassandra
+Docker setup:
+	1.docker pull Cassandra
+	2.docker run -p 7000:7000 -p 7001:7001 -p 7199:7199 -p 9042:9042 -p 9160:9160 --name Cassandra -d Cassandra:latest
+	3.docker ps
+	4.Copy the contID and run docker exec -it contID bash
+	5.cqlsh
+	6.create keyspace test wit repication={'class':'SimpleStrategy','replication_factor':1};
+	7.desc keyspaces;
+	8.use test;
+	9.nosql commands.......

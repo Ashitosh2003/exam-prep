@@ -1,0 +1,20 @@
+RStudio:
+	1.Statistical Analysis:
+		1.dat <- read.csv(file ="C:\\Users\\Dakshith\\Downloads\\Compressed\\Datasets\\inflammation-01.csv", header =FALSE)
+		2.head(dat)
+		3.patient_1 <- dat[1, ]
+		4.max(patient_1)
+		5.max(dat[2, ])
+		6.min(dat[, 7])
+		7.mean(dat[, 7])
+		8.sd(dat[,7])
+		9.summary(dat[,1:4])
+
+	2. Data Visualization:
+		1.data(airquality)
+		2.barplot(airquality$Ozone, main = 'Ozone Concenteration in air',xlab = 'ozone levels', horiz = TRUE)
+		3.barplot(airquality$Ozone, main = 'Ozone Concenteration in air', xlab = 'ozone levels', col ='blue',horiz = FALSE)
+		4.hist(airquality$Temp, main ="La Guardia Airport's Maximum Temperature(Daily)", xlab="Temperature(Fahrenheit)", xlim = c(50, 125), col ="yellow", freq = TRUE)
+		5.boxplot(airquality$Wind, main = "Average wind speed at La Guardia Airport", xlab = "Miles per hour", ylab = "Wind", col = "orange", border = "brown", horizontal = TRUE, notch = TRUE)
+		6.boxplot(airquality[, 0:4], main ='Box Plots for Air Quality Parameters')
+		7.plot(airquality$Ozone, airquality$Month, main ="Scatterplot Example", xlab ="OzoneConcentration in parts per billion", ylab =" Month of observation ", pch = 19)
